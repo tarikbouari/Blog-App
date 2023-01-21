@@ -3,9 +3,9 @@ class Post < ApplicationRecord
   has_many :comments
   has_many :likes
 
-  after_save :posts_count
+  after_save :posts_counter
 
-  def posts_count
+  def posts_counter
     user.increment!(:posts_counter)
   end
 
