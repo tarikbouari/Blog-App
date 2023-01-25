@@ -5,5 +5,11 @@ Rails.application.routes.draw do
   root "users#index"
 
  # Display all users
-  resources :users, :posts, :comments, :likes
+  resources :users 
+
+  #display all the post for a specific user
+  get 'users/:user_id/posts', to: 'posts#index', as: 'posts'
+  
+  #display a user specific post 
+  get 'users/:user_id/posts/:id', to: 'posts#show', as: 'post'
 end
