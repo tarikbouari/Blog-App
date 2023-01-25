@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
  # Display all users
   resources :users 
-
+  
   #display all the post for a specific user
   get 'users/:user_id/posts', to: 'posts#index', as: 'posts'
   
