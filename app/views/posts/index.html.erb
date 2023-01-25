@@ -1,0 +1,11 @@
+
+<h1> Here is a list of Post </h1>
+
+<ul>
+    <% @posts.each do |post|%>
+        <li>
+            <%= post.author_id %>
+         </li>
+    <% end%>
+</ul>
+  <%= link_to "Specific post", posts_path(@posts) %>"

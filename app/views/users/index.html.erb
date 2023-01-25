@@ -1,0 +1,10 @@
+<h1> welcome to our app </h1>
+<h1> Here is a list of Users <h1>
+
+<ul>
+    <% @users.each do |user|%>
+        <p>
+            <%= user.name%>
+         </p>
+    <% end%>
+</ul>
