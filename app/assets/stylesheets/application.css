@@ -163,3 +163,17 @@
     margin: 0rem  auto;
   }
   
+  .ctn-post-details {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #7D41E1;
+    padding: 1rem;
+    width: 80%;
+    margin:1rem auto 0 auto;
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
