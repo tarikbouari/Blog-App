@@ -1,11 +1,48 @@
+<%= render :partial => "users/nav" %>
+<section class="ctn-post-index">
+<div class="users">
+<div class="user-profile">
+    <%= image_tag @user.photo, alt:"{@user.name}" %>
+</div>
+<div class="container-username">
+    <h1><%= @user.name %></h1>
+    <h3>Number of posts: <%= @user.posts.count%></h3>
+</div>
+</div>
 
-<h1> Here is a list of Post </h1>
+<% @user.posts.each do |post| %>
+    <a href=" /users/<%= @user.id %>/posts/<%= post.id%> ">
+ <div class="ctn-post">
+   <div class="post-item">
+    <h3> Post <%= post.id%> </h3>
+   </div>
+   <div class="post-details">
+     <h4><%= post.title%></h4>
+     <p> <%= post.text[0...150]%></p>
+   </div>
+   <div class="comment-num">
+     <span>Comments: <%= post.comments.count %></span>
+      <span>Likes: <%= post.likes.count %></span>
+   </div>
 
-<ul>
-    <% @posts.each do |post|%>
-        <li>
-            <%= post.author_id %>
-         </li>
-    <% end%>
-</ul>
-  <%= link_to "Specific post", posts_path(@posts) %>"
+   
+ </div>
+
+   </a>
+   
+    <% post.recent_comments.each do |comment| %>
+            <div class="user-comment">
+               <div class="user-comment-content">
+                           <b><%= comment.author.name %></b>
+                           <span class="comment-date"><%= comment.created_at %></span>
+               </div>
+                    <p class="comment"><%= comment.text %></p>
+               
+            </div>
+       <% end %>
+       <%end%>
+       <a class="btn">
+            <button class="post-btn"> Pagination</button>
+         </a>
+</section>
+
