@@ -8,18 +8,17 @@ class Post < ApplicationRecord
 
   after_save :posts_counter
 
-  after_initialize :set_comments_and_likes_counter_default  
-
+  after_initialize :set_comments_and_likes_counter_default
 
   validates :title, presence: true, length: { in: 1..250 }
-  validates :comments_counter, :likes_counter, numericality: { only_integer: true }, comparison: { greater_than_or_equal_to: 0 }
+  validates :comments_counter, :likes_counter, numericality: { only_integer: true },
+                                               comparison: { greater_than_or_equal_to: 0 }
 
+  def set_comments_and_likes_counter_default
+    self.comments_counter = 0 if comments_counter.nil?
+    self.likes_counter = 0 if likes_counter.nil?
+  end
 
-  def set_comments_and_likes_counter_default   
-    self.comments_counter = 0 if comments_counter.nil?   
-    self.likes_counter = 0 if likes_counter.nil? 
-   end
-  
   def posts_counter
     author.increment!(:posts_counter)
   end
@@ -31,5 +30,4 @@ class Post < ApplicationRecord
   def all_comments
     comments.all
   end
-  
 end
