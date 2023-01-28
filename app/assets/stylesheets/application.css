@@ -188,3 +188,33 @@ ul li {
   align-items: center;
   gap:1rem;
 }
+
+.head-h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.buttons {
+  display: flex;
+  width: 100;
+  margin: 1rem auto;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+}
+
+.like {
+  border: none;
+    background-color: #2daafc;
+    padding: 0rem 0.5rem;
+    border-radius: 0.3rem;
+    color: #fff;
+}
+
+button {
+  border:none;
+  color: #fff;
+  padding:0.5rem 1rem;
+  border-radius:0.3rem ;
+  background-color: #2daafc;
+}
