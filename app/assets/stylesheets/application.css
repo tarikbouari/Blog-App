@@ -63,7 +63,8 @@ ul li {
 .ctn-post-index,
 .ctn-post-show,
 .ctn-create-comment,
-.ctn-create-post {
+.ctn-create-post,
+.form-ctn {
   margin: 0 auto;
   padding: 2rem 3rem;
   width: 100%;
@@ -171,4 +172,19 @@ ul li {
 .post-header {
   display: flex;
   justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.formdiv{
+  margin: 1rem 0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
 }
