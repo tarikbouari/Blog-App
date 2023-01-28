@@ -1,27 +1,28 @@
 <%= render :partial => "users/nav" %>
 <section class= "ctn-post-show">
- <% @user.posts.each do |post| %>
+<h1 class= "head-h1"> post with all comments</h1>
+
   <div class="ctn-post-details">
     <div class="post-head">
          <div class="post-item">
-         <h3> Post <%= post.id%> by <span><%= @user.name %></span> </h3>
+         <h3> Post <%= @post.id%> by <span><%= @post.author.name %></span> </h3>
         </div>
 
         <div class="comment-num">
-      <span>Comments: <%= post.comments.count %></span>
-       <span>Likes: <%= post.likes.count %></span>
+      <span>Comments: <%= @post.comments.count %></span>
+       <span>Likes: <%= @post.likes.count %></span>
       </div>
     </div> 
 
     <div class="post-details">
-      <p> <%= post.text[0...150]%></p>
+      <p> <%= @post.text%></p>
     </div>
 
     
   </div>
 
    <div class="user-comment">
-        <% post.all_comments.each do |comment| %>
+        <% @post.all_comments.each do |comment| %>
                 <div class="user-comment__content">
                             <b><%= comment.author.name %></b>
                             <span class="comment-date"><%= comment.created_at %></span>
@@ -29,8 +30,17 @@
                      <p class="comment"><%= comment.text %></p>
                 <% end %>
         </div>
-
-     <%end%>
-  
+        <div class= "buttons">
+        <%= link_to new_user_post_comment_path(@user, @post) do %>
+          <div class="btn">
+          <button class ="post-btn">
+              New comment
+          </button>
+          </div>
+          
+       <%end%>
+        
+       <div class='like'><%= button_to 'Like',user_post_likes_path(@user, @post), method: :post %></div>
+        </div>
 
   </section>

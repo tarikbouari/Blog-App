@@ -1,0 +1,18 @@
+<%= render :partial => "users/nav" %>
+<section class="form-ctn">
+<div class="form">
+ <h1> New Comment</h1>
+ <%= form_with model: @comment, url: user_post_comments_path do |form| %>
+    <div class="formdiv">
+    <label class="form-label">Add your comment</label>
+    <%= form.text_area :text %>
+    </div>
+    
+    <div class="formdiv">
+    <%= form.button "Add Comment", type: "submit", 'data-ripple-light': true %>
+    </div>
+
+    <%end%>
+</div>
+</section>
+
