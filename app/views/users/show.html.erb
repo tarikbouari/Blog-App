@@ -31,7 +31,7 @@
     </div>
 <%end%>
 
-
+    <div class= "allbtn">
     <%= link_to  user_posts_path(@user), class: 'self-center' do %>
         <div class="btn">
         <button class ="post-btn">
@@ -40,4 +40,14 @@
         </div>
         
      <%end%>   
+
+     <%= link_to new_user_post_path(@user) do %>
+        <div class="btn">
+        <button class ="post-btn">
+            New Post
+        </button>
+        </div>
+        
+     <%end%>
+     </div>
 </section>
