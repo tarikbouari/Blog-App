@@ -1,0 +1,22 @@
+<%= render :partial => "users/nav" %>
+<section class="form-ctn">
+<div class="form">
+ <h1> New post</h1>
+ <%= form_with model: @new_post, url: user_posts_path do |form| %>
+    <div class="formdiv">
+    <label class="form-label">Post title</label>
+    <%= form.text_field :title %>
+    </div>
+    <div class="formdiv">
+    <label class="form-label">Enter your text</label>
+    <%= form.text_area :text %>
+    </div>
+
+    <div class="formdiv">
+    <%= form.button "Create Post", type: "submit", 'data-ripple-light': true %>
+    </div>
+
+    <%end%>
+</div>
+</section>
+
