@@ -122,6 +122,12 @@ To run the project, execute the following command:
 - Twitter: [@tarikbouari](https://twitter.com/tarikbouari)
 - LinkedIn: [tarikbouari](https://linkedin.com/tarikbouari)
 
+👤 **Hayet Fellah**
+
+- GitHub: [@laiifuu](https://github.com/laiifuu)
+- Twitter: [@hayet_fe](https://twitter.com/hayet_fe)
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
