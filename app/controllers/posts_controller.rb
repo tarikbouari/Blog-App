@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   def index
     @user = User.find(params[:user_id])
     @posts = Post.all
+    # @postfecth = Posts.includes([:author])
   end
 
   def show
