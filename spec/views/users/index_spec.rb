@@ -17,13 +17,13 @@ RSpec.describe 'Post Show', type: :feature do
   it 'shows the username of the user' do
     expect(page).to have_content(@author.name)
   end
-  
+
   it 'contains users pic' do
-    expect(page).to have_css("img[src='#{@avatar_pic}']")    
+    expect(page).to have_css("img[src='#{@avatar_pic}']")
   end
-  
+
   it 'Count user post' do
-    expect(page.body).to include('Number of posts: 1')    
+    expect(page.body).to include('Number of posts: 1')
   end
 
   it 'Directed to show user page' do

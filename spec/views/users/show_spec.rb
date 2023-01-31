@@ -1,4 +1,3 @@
-
 require 'rails_helper'
 RSpec.describe 'User show', type: :feature do
   before :each do
@@ -40,7 +39,7 @@ RSpec.describe 'User show', type: :feature do
   it 'shows the New Post button' do
     expect(page).to have_content('New Post')
   end
- 
+
   it 'redirects to show all user posts when the \'See all posts\' button is clicked' do
     click_link 'See All Posts'
     expect(current_path).to match user_posts_path(@author)

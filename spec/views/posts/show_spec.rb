@@ -50,6 +50,4 @@ RSpec.describe 'Post Show', type: :feature do
     expect(page).to have_content(@com2.author.name)
     expect(page).to have_content(@com3.author.name)
   end
-
-
 end
