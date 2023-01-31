@@ -12,7 +12,6 @@ RSpec.describe 'Post Index', type: :feature do
                                text: 'This is james')
 
     @comment = Comment.create(author: @author, post: @second_post, text: 'Thank you')
-   
 
     visit user_posts_path(@author)
   end
@@ -54,7 +53,6 @@ RSpec.describe 'Post Index', type: :feature do
   end
 
   it 'shows the users first comment on a post ' do
-    expect(page).to have_content(@comment.text) 
+    expect(page).to have_content(@comment.text)
   end
-
 end
