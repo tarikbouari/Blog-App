@@ -12,13 +12,17 @@
 </div>
 
 <% @user.posts.each do |post| %>
-    <a href=" /users/<%= @user.id %>/posts/<%= post.id%> ">
+    
  <div class="ctn-post">
    <div class="post-item">
     <h3> Post <%= post.id%> </h3>
    </div>
    <div class="post-details">
+  #  <a href=" /users/<%= @user.id %>/posts/<%= post.id%> ">
+  <%= link_to user_post_path(@user, post) do %>
      <h4><%= post.title %></h4>
+    #  </a>
+    <%end%>
      <p> <%= post.text %></p>
    </div>
    <div class="comment-num">
@@ -29,7 +33,7 @@
    
  </div>
 
-   </a>
+   
    
     <% post.recent_comments.each do |comment| %>
             <div class="user-comment">
