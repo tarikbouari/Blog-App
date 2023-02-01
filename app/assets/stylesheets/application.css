@@ -132,9 +132,10 @@ ul li {
   align-self: flex-end;
 }
 
-.user-profile {
+.img-user {
+  width: 100%;
+  height: auto;
   border: 1px solid #7d41e1;
-  padding: 2rem;
 }
 
 .ctn-bio {
