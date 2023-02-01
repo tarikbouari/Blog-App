@@ -46,7 +46,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_01_142055) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.string "photo", default: "https://wallpapercave.com/w/wp7171967"
+    t.string "photo", default: "https://media.techtribune.net/uploads/2022/11/Naruto-640x360.jpg"
     t.text "bio"
     t.integer "posts_counter", default: 0
     t.datetime "created_at", null: false
