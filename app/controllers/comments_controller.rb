@@ -21,10 +21,11 @@ class CommentsController < ApplicationController
       end
     end
   end
+
   def destroy
-    user = User.find(params[:user_id])
-    post = user.posts.find(params[:post_id])
-    comment = Comment.find(params[:id])
+    # user = User.find(params[:user_id])
+    # post = user.posts.find(params[:post_id])
+    # comment = Comment.find(params[:id])
     if comment.destroy
       flash[:success] = 'Post was successfully deleted.'
     else
@@ -32,6 +33,7 @@ class CommentsController < ApplicationController
     end
     redirect_to user_post_path
   end
+
   def comment_params
     params.require(:comment).permit(:text).merge(author: current_user, post_id: params.require(:post_id))
   end

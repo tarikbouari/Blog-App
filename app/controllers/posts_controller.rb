@@ -27,6 +27,7 @@ class PostsController < ApplicationController
       end
     end
   end
+
   def destroy
     post = Post.find(params[:id])
     if post.destroy
