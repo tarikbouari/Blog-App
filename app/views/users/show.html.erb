@@ -40,7 +40,7 @@
         </div>
         
      <%end%>   
-
+        <% if can? :create, @post %>
      <%= link_to new_user_post_path(@user) do %>
         <div class="btn">
         <button class ="post-btn">
@@ -49,11 +49,11 @@
         </div>
         
      <%end%>
-   
+   <%end%>
         <div class="btn">
         <%= button_to "Sign out", destroy_user_session_path, method: :delete, data: {turbo: false}%>
         </div>
         
-   
-     </div>
+        
+    </div>
 </section>
