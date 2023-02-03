@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
   def index
     @posts = Post.all
     @user = User.includes(posts: { comments: [:author] }).find(params[:user_id])
@@ -25,6 +26,16 @@ class PostsController < ApplicationController
         end
       end
     end
+  end
+
+  def destroy
+    post = Post.find(params[:id])
+    if post.destroy
+      flash[:success] = 'Post was successfully deleted.'
+    else
+      flash[:error] = 'Error: Post could not be deleted'
+    end
+    redirect_to user_posts_url
   end
 
   def post_params

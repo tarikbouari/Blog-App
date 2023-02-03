@@ -28,7 +28,12 @@
                             <span class="comment-date"><%= comment.created_at %></span>
                 </div>
                      <p class="comment"><%= comment.text %></p>
+                      <% if can? :destroy, comment %>
+                     <%= button_to "Delete Comment", user_post_comment_path(@user, @post, comment), method: :delete , 'data-ripple-light': true %>
+                     <%end%>
                 <% end %>
+
+               
         </div>
         <div class= "buttons">
         <%= link_to new_user_post_comment_path(@user, @post) do %>
