@@ -29,8 +29,9 @@
      <span>Comments: <%= post.comments.count %></span>
       <span>Likes: <%= post.likes.count %></span>
    </div>
-
-   
+   <% if can? :destroy, post %>
+      <%= button_to "Delete Post", user_post_path(@user.id, post.id), method: :delete, data: {turbo: false}%>
+   <% end %>
  </div>
 
    
@@ -45,9 +46,15 @@
                
             </div>
        <% end %>
+
        <%end%>
+       
        <a class="btn">
             <button class="post-btn"> Pagination</button>
          </a>
+     
+         
+         
+         
 </section>
 
