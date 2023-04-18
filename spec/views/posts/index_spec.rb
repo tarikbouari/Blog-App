@@ -55,4 +55,22 @@ RSpec.describe 'Post Index', type: :feature do
   it 'shows the users first comment on a post ' do
     expect(page).to have_content(@comment.text)
   end
+
+  it 'shows part of a post body ' do
+    expect(page).to have_content(@second_post.text)
+  end
+
+  it 'Redirect to post show page when a post is clicked' do
+    click_on @first_post.title
+    expect(page).to have_current_path(user_post_path(@author, @first_post))
+  end
+
+  it 'to show the Pagination buttons' do
+    expect(page).to have_content('Pagination')
+  end
+
+  it 'shows the users first comment on a post ' do
+    expect(page).to have_content(@comment.text)
+  end
+
 end
