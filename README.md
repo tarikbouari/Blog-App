@@ -131,6 +131,7 @@ To run the project, execute the following command:
 
 - GitHub: [@kenndyowusu](https://github.com/kennedyowusu)
 - Twitter: [@kenndyowusu](https://twitter.com/_iamkobby)
+- LinkedIn: [@kennedy-owusu](www.linkedin.com/in/kennedy-owusu)
 
 
 
