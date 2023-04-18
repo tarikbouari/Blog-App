@@ -25,12 +25,16 @@ gem 'turbo-rails'
 gem 'stimulus-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
+gem 'cancancan'
+gem 'devise'
 gem 'jbuilder'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
 gem 'rubocop', '>= 1.0', '< 2.0'
+
+# gem 'rspec-core', '~> 3.12.0' 
 
 # gem 'nodejs', '>= 14.0', '< 15.0'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
@@ -48,6 +52,7 @@ gem 'bootsnap', require: false
 # Use Sass to process CSS
 # gem "sassc-rails"
 gem 'rspec-rails'
+# gem 'cssbundling-rails'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 

@@ -7,6 +7,7 @@ class Post < ApplicationRecord
   has_many :likes
 
   after_save :posts_counter
+  after_destroy :posts_counter
 
   after_initialize :set_comments_and_likes_counter_default
 
