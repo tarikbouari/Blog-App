@@ -127,6 +127,11 @@ To run the project, execute the following command:
 - GitHub: [@laiifuu](https://github.com/laiifuu)
 - Twitter: [@hayet_fe](https://twitter.com/hayet_fe)
 
+👤 **kenndyowusu**
+
+- GitHub: [@kenndyowusu](https://github.com/kennedyowusu)
+- Twitter: [@kenndyowusu](https://twitter.com/_iamkobby)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
