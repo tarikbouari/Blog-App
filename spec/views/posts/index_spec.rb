@@ -55,5 +55,4 @@ RSpec.describe 'Post Index', type: :feature do
   it 'shows the users first comment on a post ' do
     expect(page).to have_content(@comment.text)
   end
-
 end

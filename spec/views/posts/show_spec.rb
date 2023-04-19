@@ -32,5 +32,4 @@ RSpec.describe 'Post Show', type: :feature do
   it 'shows number of likes a post has' do
     expect(page.body).to include('Likes: 1')
   end
- 
 end
