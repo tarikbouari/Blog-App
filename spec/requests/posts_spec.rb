@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
   describe 'GET #index' do
-    it 'sould test the response' do
+    it 'should test the response' do
       # another way for getting the route is get users_path
       get '/users/user_id/posts'
       expect(response).to have_http_status(:ok)
