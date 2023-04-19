@@ -32,4 +32,12 @@ RSpec.describe 'Post Show', type: :feature do
   it 'shows number of likes a post has' do
     expect(page.body).to include('Likes: 1')
   end
+
+it 'shows the title of the post' do
+    expect(page).not_to have_content(@post.title)
+  end
+
+  it 'shows part of a post body (This is ObiWans\' message: Don\'t let the Empire win)' do
+    expect(page).to have_content(@post.text)
+  end
 end
