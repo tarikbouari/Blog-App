@@ -30,7 +30,7 @@ RSpec.describe 'Post Show', type: :feature do
     expect(page.body).to include('Likes: 1')
   end
 
-it 'shows the title of the post' do
+  it 'shows the title of the post' do
     expect(page).not_to have_content(@post.title)
   end
 
@@ -38,7 +38,7 @@ it 'shows the title of the post' do
     expect(page).to have_content(@post.text)
   end
 
-it 'shows the comments on the post users left lik(Thank you for your support 😊)' do
+  it 'shows the comments on the post users left lik(Thank you for your support 😊)' do
     expect(page).to have_content(@com1.text)
     expect(page).to have_content(@com2.text)
   end
@@ -46,6 +46,5 @@ it 'shows the comments on the post users left lik(Thank you for your support �
   it 'shows the user name of a comment' do
     expect(page).to have_content(@com1.author.name)
     expect(page).to have_content(@com2.author.name)
-
   end
 end

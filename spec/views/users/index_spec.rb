@@ -1,9 +1,3 @@
-# require 'rails_helper'
-
-# RSpec.describe 'Post Show', type: :feature do
-#   before :each do
-#     @avatar_pic = 'https://unsplash.com/photos/F_-0BxGuVvo'
-
 require 'rails_helper'
 
 RSpec.describe 'users/index.html.erb', type: :feature do
