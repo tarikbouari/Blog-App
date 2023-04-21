@@ -122,10 +122,12 @@ To run the project, execute the following command:
 - Twitter: [@tarikbouari](https://twitter.com/tarikbouari)
 - LinkedIn: [tarikbouari](https://linkedin.com/tarikbouari)
 
-👤 **Hayet Fellah**
+👤 **Kennedy Owusu**
 
-- GitHub: [@laiifuu](https://github.com/laiifuu)
-- Twitter: [@hayet_fe](https://twitter.com/hayet_fe)
+- GitHub: [@kennedyowusu](https://github.com/kennedyowusu)
+- Twitter: [@kennedyowusu](https://twitter.com/kennedyowusu)
+- LinkedIn: [@kennedyowusu](https://linkedin.com/kennedyowusu)
+
 
 
 
