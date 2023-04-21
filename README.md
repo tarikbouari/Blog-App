@@ -74,8 +74,7 @@ A post can be commented , Liked, and share. Build with Ruby on Rails, Postegresq
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- in progress :smile: [Live Demo Link](https://yourdeployedapplicationlink.com)
-
+- Coming soon :smile:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
