@@ -125,11 +125,8 @@ To run the project, execute the following command:
 👤 **Kennedy Owusu**
 
 - GitHub: [@kennedyowusu](https://github.com/kennedyowusu)
-- Twitter: [@kennedyowusu](https://twitter.com/kennedyowusu)
-- LinkedIn: [@kennedyowusu](https://linkedin.com/kennedyowusu)
-
-
-
+- Twitter: [@_amkobby](https://twitter.com/_iamkobby_)
+- LinkedIn: [kennedy-owusu](www.linkedin.com/in/kennedy-owusu)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,6 +137,8 @@ To run the project, execute the following command:
 - [ ] **[Controllers specs]**
 - [ ] **[Processing data in models]**
 - [ ] **[Views]**
+- [ ] **Delete Post**
+- [ ] **Create new user account**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
