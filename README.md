@@ -69,12 +69,8 @@ A post can be commented , Liked, and share. Build with Ruby on Rails, Postegresq
 <!-- ER DIAGRAM-->
 ## :card_index: Entity Relationship Diagram <a name="er-diagram"></a>
 ![er-diagram](https://user-images.githubusercontent.com/84629565/203113736-82dacec0-6b75-42e6-b87e-8bf441ffbe57.png)
-<!-- LIVE DEMO -->
 
-## 🚀 Live Demo 
 
-- Coming soon :smile:
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
