@@ -72,10 +72,6 @@ A post can be commented , Liked, and share. Build with Ruby on Rails, Postegresq
 ![er-diagram](https://user-images.githubusercontent.com/84629565/203113736-82dacec0-6b75-42e6-b87e-8bf441ffbe57.png)
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- in progress :smile: [Live Demo Link](https://yourdeployedapplicationlink.com)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -109,7 +105,6 @@ To run the project, execute the following command:
   rails server or rails s
 ``` 
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -125,7 +120,7 @@ To run the project, execute the following command:
 👤 **Kennedy Owusu**
 
 - GitHub: [@kennedyowusu](https://github.com/kennedyowusu)
-- Twitter: [@_amkobby](https://twitter.com/_iamkobby_)
+- Twitter: [@_amkobby](https://twitter.com/_iamkobby)
 - LinkedIn: [kennedy-owusu](www.linkedin.com/in/kennedy-owusu)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -134,9 +129,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Controllers specs]**
-- [ ] **[Processing data in models]**
-- [ ] **[Views]**
+- [ ] **Controllers specs**
+- [ ] **Processing data in models**
+- [ ] **Views**
 - [ ] **Delete Post**
 - [ ] **Create new user account**
 
