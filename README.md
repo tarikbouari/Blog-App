@@ -1,76 +1,43 @@
 <a name="readme-top"></a>
 
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [:card_index: Entity Relationship Diagram](#er-diagram)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-**Blog Application** 
-It's a web application that allows user to register and make posts.
-A post can be commented , Liked, and share. Build with Ruby on Rails, Postegresql
+# 📖 Blog-App <a name="about-project"></a>
 
+**Blog App** is a project where I will be creating a fully functional blog website using Ruby on Rails.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li>HTML, CSS</li>
-    <li>JavaScript</li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li>Ruby on Rails</li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+- Ruby 
+- Ruby on Rails
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[Create and run necessary migration files]**
-- **[Match table and column names to the ERD diagram.]**
+- **Added migrations for the database**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ER DIAGRAM-->
-## :card_index: Entity Relationship Diagram <a name="er-diagram"></a>
-![er-diagram](https://user-images.githubusercontent.com/84629565/203113736-82dacec0-6b75-42e6-b87e-8bf441ffbe57.png)
-
-
 
 <!-- GETTING STARTED -->
 
@@ -80,28 +47,21 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-`Git` and `Ruby`
-```
- gem install rails
-```
+In order to run this project you need Ruby and  Postgresql installed on your computer.
+
+### Setup
+
+Clone this repository to your desired folder: 
+
+`git clone https://github.com/tarikbouari/Blog-App.git`
+
 
 ### Install
 
-Install this project with:
+Then install the project's necessary dependencies with: 
 
-```sh
-  bundle install
-```
+`bundle install`
 
-### Usage
-
-To run the project, execute the following command:
-
-
-```sh
-  rails server or rails s
-``` 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +69,9 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Tarik Bouari**
+
+
+￼ **Tarik Bouari**
 
 - GitHub: [@tarikbouari](https://github.com/tarikbouari)
 - Twitter: [@tarikbouari](https://twitter.com/tarikbouari)
@@ -121,17 +83,16 @@ To run the project, execute the following command:
 - Twitter: [@_amkobby](https://twitter.com/_iamkobby)
 - LinkedIn: [kennedy-owusu](www.linkedin.com/in/kennedy-owusu)
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Controllers specs**
-- [ ] **Processing data in models**
-- [ ] **Views**
-- [ ] **Delete Post**
-- [ ] **Create new user account**
+- [ ] **Adding controllers**
+- [ ] **Adding views**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,27 +110,26 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give a ⭐️ if you like this project!
+Give this project a ⭐️ if you like it !
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
 I would like to thank:
 - [Microverse](microverse.org)
 
+And Shout out to the Ruby documentation :) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
